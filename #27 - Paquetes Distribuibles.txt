@@ -1,0 +1,27 @@
+#Asi es como creamos los paquetes distribuibles. En la práctica no le puse ni e-mail ni url
+aunque parece que es necesario
+#Para crear el instalador se usa el simbolo del sistema y una vez en la carpeta del programa
+usamos el comando "python 'nombre_archivo.py' sdist" y le damos enter.
+
+CODIGO SETUP EN PYTHON:
+
+from setuptools import setup
+
+setup(
+    name="Paquete cálculo",
+    version="1.0",
+    description="Paquete de cálculos básicos matemáticos",
+    author="Kiwi",
+    author_email="kiwi@kiwi"
+    url="kiwi.com"
+    packages=["Calculos","Calculos"]
+)
+
+INSTRUCCIÓN PARA INSTALAR EL PAQUETE. DESDE LA CONSOLA Y EN LA CARPETA "DIST". ESCRIBIMOS:
+(ATENCIÓN LAS COMILLAS SIMPLES DE ABAJO NO VAN ESCRITAS)
+
+...\Pyhton\Curso #2\dist>'pip3 install "nombre_del_paquete"'
+
+INSTRUCCIÓN PARA DESINSTALAR EL PAQUETE. DESDE LA CONSOLA Y EN CUALQUIER LUGAR:
+(ATENCIÓN LAS COMILLAS SIMPLES DE ABAJO NO VAN ESCRITAS)
+...\Pyhton\Curso #2\dist>'pip3 uninstall "nombre_del_paquete"'
